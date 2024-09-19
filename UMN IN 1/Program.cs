@@ -1,4 +1,7 @@
-﻿namespace UMN_IN_1
+﻿using System.Xml.Linq;
+using System;
+
+namespace UMN_IN_1
 {
     internal class Fitnessklubbsmedlemskapssystem
     {
@@ -9,9 +12,9 @@
             Kunder kunder1 = new Kunder();
             kunder1.Showinfo();
             Tränare tränare = new Tränare();
-            tränare.workout(); 
-
+            tränare.workout();
+            Medlemskap medlemskap = new Medlemskap();
+            medlemskap.GetIt();
         }
-
-    }      
+    }
 }
